@@ -158,9 +158,68 @@ footer {
     justify-content: center;
 }
 
-@media (min-width: 768px) {
-    .container > img {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width: 768px) {
+    header {
+        .header-info-foto {
+            width: 400vw;
+            height: 30vh;
+        }
+
+        nav {
+            flex-direction: column;
+        }
     }
+        .h1 {
+            font-size: 1.2rem !important;
+        }
+    .section-partners img {
+        display: none;
+    }
+
+    .section-partners img:first-child {
+        display: block;
+        width: 35vw;
+        height: 35%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .action-button {
+        width: 30vw;
+        height: 5vh;
+    }
+
+    a > img {
+        width: 4vw;
+        height: 3vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        .header-info-foto {
+            width: 300vw;
+            height: 25vh;
+        }
+
+        .h1 {
+            font-size: 1.2rem !important;
+        }
+
+    }
+
+    .section-partners img {
+        display: none;
+    }
+
+        .section-partners img:nth-child(odd) {
+            display: block;
+            width: 20vw;
+            height: 30%;
+        }
+
+
 }
